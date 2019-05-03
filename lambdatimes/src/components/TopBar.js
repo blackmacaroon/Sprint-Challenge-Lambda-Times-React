@@ -15,7 +15,7 @@ const UpperBar = styled.div`
   background-color: #333;
 `;
 
-const Container = styled.div`
+const TopContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: none;
@@ -29,7 +29,7 @@ const Container = styled.div`
     }
 `;
 
-const ContainerL = styled.div`
+const TopContainerL = styled.div`
   display: flex;
   justify-content: none;
   align-items: center;
@@ -38,7 +38,12 @@ const ContainerL = styled.div`
   font-size: 11px;
 `;
 
-const ContainerC = styled.div`
+const TopLeftSpan = styled.span`
+  cursor: pointer;
+  margin-right: 25%;
+  font-weight: bold;`;
+
+const TopContainerC = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +52,19 @@ const ContainerC = styled.div`
   font-size: 9px; 
 `;
 
-const ContainerR = styled.div`
+const TopCenterSpan = styled.span`
+  cursor: pointer;
+  margin-right: 5%;
+    :last-child {
+      margin-right: 0;
+    }
+    :hover {
+      text-decoration: underline;
+    }
+
+`;
+
+const TopContainerR = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -57,21 +74,24 @@ const ContainerR = styled.div`
   font-weight: bold;
 `;
 
+const TopRightSpan = styled.span`
+  cursor: pointer;
+`;
 
 const TopBar = () => {
   return (
     <UpperBar>
-      <Container>
-        <ContainerL>
-          <span>TOPICS</span><span>SEARCH</span>
-        </ContainerL>
-        <ContainerC>
+      <TopContainer>
+        <TopContainerL>
+          <TopLeftSpan>TOPICS</TopLeftSpan><TopLeftSpan>SEARCH</TopLeftSpan>
+        </TopContainerL>
+        <TopContainerC>
           <span>GENERAL</span><span>BROWNBAG</span><span>RANDOM</span><span>MUSIC</span><span>ANNOUNCEMENTS</span>
-        </ContainerC>
-        <ContainerR>
-          <span>LOG IN</span>
-        </ContainerR>
-      </Container>
+        </TopContainerC>
+        <TopContainerR>
+          <TopRightSpan>LOG IN</TopRightSpan>
+        </TopContainerR>
+      </TopContainer>
     </UpperBar>
   )
 }
