@@ -3,13 +3,14 @@ import Tab from './Tab';
 import PropTypes from 'prop-types';
 
 const Tabs = props => {
+  console.log('props', props);
   return (
     <div className="tabs">
       <div className="topics">
         <span className="title">TRENDING TOPICS:</span>
           {/* mapping through array tabs, passing each as one tab, to be passed to Tab */}
           props.tabs.map((tab) => {
-            //passing the new tab (props.tab) AS 'tab' to Tab.js!!
+            //passing the single tab (props.tab) AS 'tab' to Tab.js!!
             <Tab tab={props.tab}/>
           })
         {/* map over the tabs provided on your props, create a new Tab component for each one.
