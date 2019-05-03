@@ -53,7 +53,7 @@ export default class Content extends Component {
       } else {
         //otherwise filter the array and return the ones that are selected?
       return this.state.cards.filter(card => {
-        return card.includes(this.state.selected)
+        return card.tab.includes(this.state.selected)
       })
     }
   };
