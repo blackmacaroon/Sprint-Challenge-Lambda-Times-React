@@ -3,10 +3,8 @@ import Card from './Card';
 
 const Cards = props => {
   return (
-    console.log('props', props);
     <div className="cards-container">
       props.cards.map((card) => {
-        console.log('card', card)
         <Card card={card}/>
 
       })
