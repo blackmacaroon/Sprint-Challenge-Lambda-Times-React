@@ -53,12 +53,6 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
-@media (min-width: 1280px) {
-  .top-bar .container {
-    width: 1280px;
-  }
-}
-
 .top-bar .container .container-left span {
   cursor: pointer;
   margin-right: 25%;
@@ -90,11 +84,6 @@ body {
   height: 120px;
   margin-top: 44px;
   padding-bottom: 15px;
-}
-@media (min-width: 1280px) {
-  .header {
-    width: 1280px;
-  }
 }
 
 
