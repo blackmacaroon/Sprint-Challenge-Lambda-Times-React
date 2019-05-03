@@ -36,7 +36,7 @@ const HeadDate = styled.span`
   flex: 1;
 `;
 
-const HeadTemp = styled(headDate)`
+const HeadTemp = styled(HeadDate)`
   text-align: right;
   
 `;

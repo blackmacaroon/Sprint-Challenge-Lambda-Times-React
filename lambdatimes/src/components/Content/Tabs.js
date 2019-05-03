@@ -12,7 +12,13 @@ const Tabs = props => {
           {props.tabs.map((tab) => {
             //passing the single tab (props.tab) AS 'tab' to Tab.js!!
             return(
-            <Tab tab={tab}/>
+              <Tab tab={tab}
+                //give Tab props.selectTabHandler as selectTabHandler
+                selectTabHandler={props.selectTabHandler}
+                //give Tab props.selectedTab as selectedTab
+                selectedTab={props.selectedTab}
+
+            />
             )
             })
           }

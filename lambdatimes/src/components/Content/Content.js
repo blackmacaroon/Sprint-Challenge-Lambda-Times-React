@@ -23,10 +23,11 @@ export default class Content extends Component {
     this.setState({tabs: tabData,
       cards: cardData})
       // console.log('mounted')
-  }
+  };
   
 
   changeSelected = tab => {
+    console.log('change', tab);
     this.setState({
       selected: tab
     })
@@ -51,7 +52,7 @@ export default class Content extends Component {
       return this.state.cards;
       } else {
         //otherwise filter the array and return the ones that are selected?
-      return this.state.cards.filter((card) => {
+      return this.state.cards.filter(card => {
         return card.includes(this.state.selected)
       })
     }
