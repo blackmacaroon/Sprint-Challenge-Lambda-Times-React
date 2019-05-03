@@ -29,9 +29,26 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+======================================================================
+prop-types is a butterfly net for common dev mistakes. It catches some basic BUGS from human error, saves us a lot of time and stress by requiring a specific property type. example: HEY your props.phonenumber type MUST be a number. (or boolean or string or null or whatever type you tell it to be) It only works on the dev side, users will never deal with a prop type. They're little helper elves to protect us from ourselves. They give us clear very error messages too!
+
 - [ ] Describe a life-cycle event in React?
+
+======================================================================
+Every component has a lifecycle: a birth, a period of growth, and a death. The birth is called the mounting phase. The component is created, data is mounted to it inthe constructor function and the data is rendered. Next is the growth, the change, the updating phase. Data is changed. A new post is created, a new comment is submitted, something is deleted, then setState is called to rerender the page with the newly updated data. Last is the unmounting, the death, where the componenet has served it's purpose and is no longer needed, it is removed to "clean up".
+
 - [ ] Explain the details of a Higher Order Component?
+
+======================================================================
+HOCs take another component as an argument, they enhance that component, then return the improved/changed/intensified version of that component. Authentication is a good example of a HOC. takes in the app, checks for an account/login/permission, then once confirmed it returns the app but opened up wide, will all the access that having an account can provide.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+======================================================================
+You can always style components with stylesheets. Preprocessors are still a valid way to style in React. These are comfortable, familiar, and helps compartmentalize all the different facets of a web app.
+You can install reactstrap and bootstrap and use their pre-styled library. This is quite quick, you get good looking elements, you can reuse the styles across the whole app, you don't have to be an artistic person, they do that for you so you can focus your energies elsewhere. 
+You can install styled-components and create styled components! These are directly in the file so you can see every facet of your front-end all at once, HTML JS and CSS. You can pass props into styled components to change styles slightly depending on the props.type. example: one button style component, 15 different types of buttons with 15 different colors!
 
 ## Project Setup
 
