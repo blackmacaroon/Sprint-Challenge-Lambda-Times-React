@@ -26,7 +26,7 @@ const Container = styled.div`
   padding: 0 10px;
 `;
 
-const ContainerL = style.div`
+const ContainerL = styled.div`
   display: flex;
   justify-content: none;
   align-items: center;
@@ -35,7 +35,7 @@ const ContainerL = style.div`
   font-size: 11px;
 `;
 
-const ContainerC = style.div`
+const ContainerC = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = props => {
-  console.log('card props', props);
+  // console.log('card props', props);
   return (
     <div className="card">
       <div className="headline">{props.card.headline}</div>
