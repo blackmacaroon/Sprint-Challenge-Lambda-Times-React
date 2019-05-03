@@ -6,10 +6,13 @@ const Cards = props => {
   return (
     <div className="cards-container">
       {/* mapping through array cards, passing each object as one card, to be passed to Card */}
-      props.cards.map((card) => {
+      {props.cards.map((card) => {
         //passing the new card (props.card) AS 'card' to Card.js!!
-        <Card card={props.card}/>
+        return (
+        <Card card={card}/>
+        )
       })
+      }
       {/* Using the cards prop, map over the list creating a 
           new Card component for each passing the card as the only prop*/}
     </div>
