@@ -49,7 +49,7 @@ const Header = () => {
   return (
     <Heady>
       <HeadDate>SMARCH 32, 2018</HeadDate>
-      <HeadyH>Lambda Times</HeadyH>
+      <h1 class="sc-dnqmqq" ><span class="the">The</span> Lambda Times</h1>
       <HeadTemp>98°</HeadTemp>
     </Heady>
   )
