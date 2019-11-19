@@ -102,3 +102,7 @@ export const carouselData = [
   "./assets/carousel/trees.jpeg",
   "./assets/carousel/turntable.jpeg"
 ]
+
+export const headlinePhotoData = [
+  "./assets/skyline.jpg"
+]

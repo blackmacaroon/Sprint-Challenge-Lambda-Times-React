@@ -4,7 +4,7 @@ import Tabs from './Tabs';
 import Cards from './Cards';
 
 // // Importing our tab and card data. No need to change anything here.
-import { tabData, cardData } from '../../data';
+import { tabData, cardData, headlinePhotoData } from '../../data';
 // const tabData=['all', 'javascript', 'technology', 'node', 'React.js', 'bootstrap'];
 
 
@@ -21,7 +21,8 @@ export default class Content extends Component {
   componentDidMount() {
     // Once the component has mounted, get the data and reflect that data on the state.
     this.setState({tabs: tabData,
-      cards: cardData})
+      cards: cardData,
+    headlinePhoto: headlinePhotoData})
       // console.log('mounted')
   };
   
@@ -68,6 +69,7 @@ export default class Content extends Component {
           `selectedTab` that includes the currently selected tab
           and `selectTabHandler` that includes the function to change the selected tab
         */}
+        <img class="head-photo" src={this.state.headlinePhoto} alt="city skyline at sunset"/>
         <Tabs tabs={this.state.tabs}
           selectedTab={this.state.selected}
           selectTabHandler={this.changeSelected}
